@@ -1,0 +1,74 @@
+.btn{
+    height: 50px;
+    width: 70px;
+    color: aliceblue;
+    background-color: black;
+    border: 1px solid aliceblue;
+    position: fixed;
+}
+#mine{
+    right: 288px;
+}
+#bag{
+    right: 218px;
+}
+#shop{
+    right: 148px;
+}
+#data{
+    right: 78px;
+}
+#account{
+    right: 8px;
+}
+#container2{
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#bcontainer1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#container3{
+    width: 500px;
+    height: 300px;
+    color: aliceblue;
+    border: 1px solid aliceblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+}
+#container3 ol li a{
+    text-decoration: none;
+}
+.acbtn{
+    width: 80px;
+    background-color: black;
+    color: aliceblue;
+    border: 1px solid aliceblue;
+    position: fixed;
+}
+#ac1{
+    right: 8px;
+    top: 60px;
+}
+#ac2{
+    right: 8px;
+    top: 82.5px;
+}
+.link{
+    color: aliceblue;
+}
+.btn:hover{
+    background-color : rebeccapurple;
+}
+.acbtn:hover{
+    background-color: rebeccapurple;
+}

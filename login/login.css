@@ -1,0 +1,53 @@
+.btn{
+    height: 50px;
+    width: 70px;
+    color: aliceblue;
+    background-color: black;
+    border: 1px solid aliceblue;
+    position: fixed;
+}
+.btn:hover{
+    background-color : rebeccapurple;
+}
+#bsignin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+#signincontainer{
+    background-color: black;
+    color: aliceblue;
+    border: 1px solid aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+    opacity: 0.8;
+}
+#title{
+    margin-top: 5px;
+}
+#btn{
+    background-color: black;
+    border: 1px solid aliceblue;
+    margin-top: 35px;
+    color: aliceblue;
+    height: 30px;
+    width: 80px;
+}
+#btn:hover{
+    background-color: rebeccapurple;
+}
+#trans{
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+}
+#trans a{
+    text-decoration: none;
+    color: rgb(64, 165, 190);
+}

@@ -1,0 +1,126 @@
+.btn{
+    height: 50px;
+    width: 70px;
+    color: aliceblue;
+    background-color: black;
+    border: 1px solid aliceblue;
+    position: fixed;
+}
+#mine{
+    right: 288px;
+}
+#bag{
+    right: 218px;
+}
+#shop{
+    right: 148px;
+}
+#data{
+    right: 78px;
+}
+#account{
+    right: 8px;
+}
+.acbtn{
+    width: 80px;
+    background-color: black;
+    color: aliceblue;
+    border: 1px solid aliceblue;
+    position: fixed;
+}
+#ac1{
+    right: 8px;
+    top: 60px;
+}
+#ac2{
+    right: 8px;
+    top: 82.5px;
+}
+.link{
+    color: aliceblue;
+}
+.btn:hover{
+    background-color : rebeccapurple;
+}
+.acbtn:hover{
+    background-color: rebeccapurple;
+}
+#title{
+    color: aliceblue;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+}
+#bcontainer1{
+    display: flex;
+
+}
+#container2{
+    color: aliceblue;
+    width: 170px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#container3{
+    color: aliceblue;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#container4{
+    background-color: black;
+    border: 1px solid aliceblue;
+    width: 150px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    z-index: 3;
+}
+.dbtn{
+    background-color: black;
+    border: 0px;
+    width: 150px;
+    color: rgba(240, 248, 255, 0.74);
+}
+.picimg{
+    width: 300px;
+    height: 300px;
+}
+.caveimg{
+    width: 500px;
+    height: 320px;
+}
+.orbimg{
+    width: 40px;
+    height: 40px;
+}
+.orbamount{
+    position: relative;
+    top: 13px;
+    margin: 0px;
+    font-size: larger;
+}
+#money{
+    position: fixed;
+    width: 180px;
+    height: 150px;
+}
+.smon{
+    display: flex;
+    color: aliceblue;
+}
+#moneyh2{
+    color: aliceblue;
+    margin: 0px;
+    font-size: 1.5em;
+}
+.dbtn:hover{
+    color: aquamarine;
+}

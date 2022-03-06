@@ -1,0 +1,128 @@
+.btn{
+    height: 50px;
+    width: 70px;
+    color: aliceblue;
+    background-color: black;
+    border: 1px solid aliceblue;
+    position: fixed;
+}
+#mine{
+    right: 288px;
+}
+#bag{
+    right: 218px;
+}
+#shop{
+    right: 148px;
+}
+#data{
+    right: 78px;
+}
+#account{
+    right: 8px;
+}
+.acbtn{
+    width: 80px;
+    background-color: black;
+    color: aliceblue;
+    border: 1px solid aliceblue;
+    position: fixed;
+}
+#ac1{
+    right: 8px;
+    top: 60px;
+}
+#ac2{
+    right: 8px;
+    top: 82.5px;
+}
+.btn:hover{
+    background-color : rebeccapurple;
+}
+.acbtn:hover{
+    background-color: rebeccapurple;
+}
+.title{
+    color: aliceblue;
+}
+#bbcontainer1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#bcontainer1{
+    width: 800px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid aliceblue;
+}
+.picimg{
+    width: 80px;
+    height: 80px;
+}
+.caveimg{
+    width: 125px;
+    height: 80px;
+}
+#container2{
+    display: flex;
+}
+#container3{
+    display: flex;
+}
+.picdiv{
+    border:1px solid aliceblue;
+}
+.cavediv{
+    width: 125px;
+    height: 80px;
+    border: 1px solid aliceblue;
+}
+#picmondiv{
+    display: flex;
+}
+.picmon{
+    width: 80px;
+}
+.orbdiv{
+    display: flex;
+    color: aliceblue;
+}
+.orbimg{
+    width: 30px;
+    height: 30px;
+}
+.orbamount{
+    position: relative;
+    top: 7px;
+    margin: 0px;
+}
+#cavemondiv{
+    display: flex;
+    margin-left: 10px;
+}
+.cavemon{
+    width: 125px;
+}
+.picimg:hover{
+    opacity: 0.5;
+}
+.caveimg:hover{
+    opacity: 0.5;
+}
+#money{
+    position: fixed;
+    width: 100px;
+    height: 150px;
+}
+.smon{
+    display: flex;
+    color: aliceblue;
+}
+#moneyh3{
+    color: aliceblue;
+    margin: 0px;
+}

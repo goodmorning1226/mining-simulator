@@ -386,7 +386,7 @@ document.getElementById("caveimg4").addEventListener("click", function(){
     };
 });
 document.getElementById("caveimg5").addEventListener("click", function(){
-    if(player["money1"] >= 12000 && player["money2"] >= 12000 && player["money3"] >= 12000 && player["money4"] >= 12000 && player["cavelv"] == 3){
+    if(player["money1"] >= 12000 && player["money2"] >= 12000 && player["money3"] >= 12000 && player["money4"] >= 12000 && player["cavelv"] == 4){
         player["cavelv"] = 5;
         player["money1"] -= 12000;
         player["money2"] -= 12000;

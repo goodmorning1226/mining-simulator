@@ -215,8 +215,8 @@ document.getElementById("picimg6").addEventListener("click", function(){
         player["money1"] -= 10000;
         player["money2"] -= 10000;
         player["money3"] -= 10000;
-        player["moeny4"] -= 10000;
-        player["moeny5"] -= 10000;
+        player["money4"] -= 10000;
+        player["money5"] -= 10000;
         localStorage.setItem("account", JSON.stringify(player));
         localStorage.setItem(player["id"], JSON.stringify(player));
         alert("購買成功");
@@ -238,8 +238,8 @@ document.getElementById("picimg7").addEventListener("click", function(){
         player["money1"] -= 16000;
         player["money2"] -= 16000;
         player["money3"] -= 16000;
-        player["moeny4"] -= 16000;
-        player["moeny5"] -= 16000;
+        player["money4"] -= 16000;
+        player["money5"] -= 16000;
         localStorage.setItem("account", JSON.stringify(player));
         localStorage.setItem(player["id"], JSON.stringify(player));
         alert("購買成功");

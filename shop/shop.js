@@ -193,7 +193,7 @@ document.getElementById("picimg5").addEventListener("click", function(){
         player["money1"] -= 6000;
         player["money2"] -= 6000;
         player["money3"] -= 6000;
-        player["moeny4"] -= 6000;
+        player["money4"] -= 6000;
         localStorage.setItem("account", JSON.stringify(player));
         localStorage.setItem(player["id"], JSON.stringify(player));
         alert("購買成功");

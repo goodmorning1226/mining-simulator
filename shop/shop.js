@@ -17,396 +17,143 @@ for(var i = 1; i<8; i++){
         <img src="../image/picaxe${i}.png" id="picimg${i}" class="picimg"/>
     </div>`;
 };
+function addpicorb(i, money, jamount){
+    for(var j = 1; j < jamount + 1; j++){
+        document.getElementById(`picmon${i}`).innerHTML +=`
+            <div id="orblv${j}-${i}" class="orbdiv"></div>`;
+        document.getElementById(`orblv${j}-${i}`).innerHTML +=`
+            <img src="../image/orb${j}.png" class="orbimg"/>`;
+        document.getElementById(`orblv${j}-${i}`).innerHTML +=`<p class="orbamount">*${money}</p>`;
+    };
+}
 for(var i = 1; i<8; i++){
     document.getElementById("picmondiv").innerHTML +=`
         <div id="picmon${i}" class="picmon"></div>`;
-    if(i == 1 || i== 2){
-        document.getElementById(`picmon${i}`).innerHTML +=`
-            <div id="orblv1-${i}" class="orbdiv"></div>`;
-        document.getElementById(`orblv1-${i}`).innerHTML +=`
-            <img src="../image/orb1.png" class="orbimg"/>`;
-        if(i == 1){
-            document.getElementById(`orblv1-${i}`).innerHTML +=`<p class="orbamount">*0</p>`;
-        }
-        else{
-            document.getElementById(`orblv1-${i}`).innerHTML +=`<p class="orbamount">*1500</p>`;
-        }
+    if(i == 1){
+        addpicorb(i, 0, 1);
+    }
+    else if(i == 2){
+        addpicorb(i, 1500, 1);
     }
     else if(i == 3){
-        for(var j = 1; j<3; j++){
-            document.getElementById(`picmon${i}`).innerHTML +=`
-                <div id="orblv${j}-${i}" class="orbdiv"></div>`;
-            document.getElementById(`orblv${j}-${i}`).innerHTML +=`
-                <img src="../image/orb${j}.png" class="orbimg"/>`;
-            if(j == 1){
-                    document.getElementById(`orblv${j}-${i}`).innerHTML +=`<p class="orbamount">*3000</p>`;
-            }
-            else if(j == 2){
-                document.getElementById(`orblv${j}-${i}`).innerHTML +=`<p class="orbamount">*3000</p>`;
-            };
-        };
+        addpicorb(i, 3000, 2);
     }
     else if(i == 4){
-        for(var j = 1; j<4; j++){
-            document.getElementById(`picmon${i}`).innerHTML +=`
-                <div id="orblv${j}-${i}" class="orbdiv"></div>`;
-            document.getElementById(`orblv${j}-${i}`).innerHTML +=`
-                <img src="../image/orb${j}.png" class="orbimg"/>`;
-            if(j == 1){
-                    document.getElementById(`orblv${j}-${i}`).innerHTML +=`<p class="orbamount">*4000</p>`;
-            }
-            else if(j == 2){
-                document.getElementById(`orblv${j}-${i}`).innerHTML +=`<p class="orbamount">*4000</p>`;
-            }
-            else if(j == 3){
-                document.getElementById(`orblv${j}-${i}`).innerHTML +=`<p class="orbamount">*4000</p>`;
-            }
-        };
+        addpicorb(i, 4000, 3);
     }
     else if(i == 5){
-        for(var j = 1; j<5; j++){
-            document.getElementById(`picmon${i}`).innerHTML +=`
-                <div id="orblv${j}-${i}" class="orbdiv"></div>`;
-            document.getElementById(`orblv${j}-${i}`).innerHTML +=`
-                <img src="../image/orb${j}.png" class="orbimg"/>`;
-            if(j == 1){
-                document.getElementById(`orblv${j}-${i}`).innerHTML +=`<p class="orbamount">*6000</p>`;
-            }
-            else if(j == 2){
-                document.getElementById(`orblv${j}-${i}`).innerHTML +=`<p class="orbamount">*6000</p>`;
-            }
-            else if(j == 3){
-                document.getElementById(`orblv${j}-${i}`).innerHTML +=`<p class="orbamount">*6000</p>`;
-            }
-            else if(j == 4){
-                document.getElementById(`orblv${j}-${i}`).innerHTML +=`<p class="orbamount">*6000</p>`;
-            };
-        };
+        addpicorb(i, 6000, 4);
     }
     else if(i == 6){
-        for(var j = 1; j<6; j++){
-            document.getElementById(`picmon${i}`).innerHTML +=`
-                <div id="orblv${j}-${i}" class="orbdiv"></div>`;
-            document.getElementById(`orblv${j}-${i}`).innerHTML +=`
-                <img src="../image/orb${j}.png" class="orbimg"/>`;
-            if(j == 1){
-                document.getElementById(`orblv${j}-${i}`).innerHTML +=`<p class="orbamount">*10000</p>`;
-            }
-            else if(j == 2){
-                document.getElementById(`orblv${j}-${i}`).innerHTML +=`<p class="orbamount">*10000</p>`;
-            }
-            else if(j == 3){
-                document.getElementById(`orblv${j}-${i}`).innerHTML +=`<p class="orbamount">*10000</p>`;
-            }
-            else if(j == 4){
-                document.getElementById(`orblv${j}-${i}`).innerHTML +=`<p class="orbamount">*10000</p>`;
-            }
-            else if(j == 5){
-                document.getElementById(`orblv${j}-${i}`).innerHTML +=`<p class="orbamount">*10000</p>`;
-            };
-        };
+        addpicorb(i, 10000, 5);
     }
     else if(i == 7){
-        for(var j = 1; j<6; j++){
-            document.getElementById(`picmon${i}`).innerHTML +=`
-                <div id="orblv${j}-${i}" class="orbdiv"></div>`;
-            document.getElementById(`orblv${j}-${i}`).innerHTML +=`
-                <img src="../image/orb${j}.png" class="orbimg"/>`;
-            if(j == 1){
-                document.getElementById(`orblv${j}-${i}`).innerHTML +=`<p class="orbamount">*16000</p>`;
-            }
-            else if(j == 2){
-                document.getElementById(`orblv${j}-${i}`).innerHTML +=`<p class="orbamount">*16000</p>`;
-            }
-            else if(j == 3){
-                document.getElementById(`orblv${j}-${i}`).innerHTML +=`<p class="orbamount">*16000</p>`;
-            }
-            else if(j == 4){
-                document.getElementById(`orblv${j}-${i}`).innerHTML +=`<p class="orbamount">*16000</p>`;
-            }
-            else if(j == 5){
-                document.getElementById(`orblv${j}-${i}`).innerHTML +=`<p class="orbamount">*16000</p>`;
-            };
-        };
+        addpicorb(i, 16000, 5);
     };
 };
-document.getElementById("picimg2").addEventListener("click", function(){
-    if(player["money1"] >= 1500 && player["picaxelv"] == 1){
-        player["picaxelv"] = 2;
-        player["money1"] -= 1500;
-        localStorage.setItem("account", JSON.stringify(player));
-        localStorage.setItem(player["id"], JSON.stringify(player));
-        alert("購買成功");
-        location.reload();
-    }
-    else if(player["picaxelv"] > 1){
-        alert("已擁有此物品")
-    }
-    else{
-        alert("餘額不足");
-    };
-});
-document.getElementById("picimg3").addEventListener("click", function(){
-    if(player["money1"] >= 3000 && player["money2"] >= 3000 && player["picaxelv"] == 2){
-        player["picaxelv"] = 3;
-        player["money1"] -= 3000;
-        player["money2"] -= 3000;
-        localStorage.setItem("account", JSON.stringify(player));
-        localStorage.setItem(player["id"], JSON.stringify(player));
-        alert("購買成功");
-        location.reload();
-    }
-    else if(player["picaxelv"] > 2){
-        alert("已擁有此物品");
-    }
-    else if(player["picaxelv"] < 2){
-        alert("請勿跳級購買");
-    }
-    else{
-        alert("餘額不足");
-    };
-});
-document.getElementById("picimg4").addEventListener("click", function(){
-    if(player["money1"] >= 4000 && player["money2"] >= 4000 && player["money3"] >= 4000 && player["picaxelv"] == 3){
-        player["picaxelv"] = 4;
-        player["money1"] -= 4000;
-        player["money2"] -= 4000;
-        player["money3"] -= 4000;
-        localStorage.setItem("account", JSON.stringify(player));
-        localStorage.setItem(player["id"], JSON.stringify(player));
-        alert("購買成功");
-        location.reload();
-    }
-    else if(player["picaxelv"] > 3){
-        alert("已擁有此物品");
-    }
-    else if(player["picaxelv"] < 3){
-        alert("請勿跳級購買");
-    }
-    else{
-        alert("餘額不足");
-    };
-});
-document.getElementById("picimg5").addEventListener("click", function(){
-    if(player["money1"] >= 6000 && player["money2"] >= 6000 && player["money3"] >= 6000 && player["money4"] >= 6000 && player["picaxelv"] == 4){
-        player["picaxelv"] = 5;
-        player["money1"] -= 6000;
-        player["money2"] -= 6000;
-        player["money3"] -= 6000;
-        player["money4"] -= 6000;
-        localStorage.setItem("account", JSON.stringify(player));
-        localStorage.setItem(player["id"], JSON.stringify(player));
-        alert("購買成功");
-        location.reload();
-    }
-    else if(player["picaxelv"] > 4){
-        alert("已擁有此物品");
-    }
-    else if(player["picaxelv"] < 4){
-        alert("請勿跳級購買");
-    }
-    else{
-        alert("餘額不足");
-    };
-});
-document.getElementById("picimg6").addEventListener("click", function(){
-    if(player["money1"] >= 10000 && player["money2"] >= 10000 && player["money3"] >= 10000 && player["money4"] >= 10000 && player["money5"] >= 10000 && player["picaxelv"] == 5){
-        player["picaxelv"] = 6;
-        player["money1"] -= 10000;
-        player["money2"] -= 10000;
-        player["money3"] -= 10000;
-        player["money4"] -= 10000;
-        player["money5"] -= 10000;
-        localStorage.setItem("account", JSON.stringify(player));
-        localStorage.setItem(player["id"], JSON.stringify(player));
-        alert("購買成功");
-        location.reload();
-    }
-    else if(player["picaxelv"] > 5){
-        alert("已擁有此物品");
-    }
-    else if(player["picaxelv"] < 5){
-        alert("請勿跳級購買");
-    }
-    else{
-        alert("餘額不足");
-    };
-});
-document.getElementById("picimg7").addEventListener("click", function(){
-    if(player["money1"] >= 16000 && player["money2"] >= 16000 && player["money3"] >= 16000 && player["money4"] >= 16000 && player["money5"] >= 16000 && player["picaxelv"] == 6){
-        player["picaxelv"] = 7;
-        player["money1"] -= 16000;
-        player["money2"] -= 16000;
-        player["money3"] -= 16000;
-        player["money4"] -= 16000;
-        player["money5"] -= 16000;
-        localStorage.setItem("account", JSON.stringify(player));
-        localStorage.setItem(player["id"], JSON.stringify(player));
-        alert("購買成功");
-        location.reload();
-    }
-    else if(player["picaxelv"] > 6){
-        alert("已擁有此物品");
-    }
-    else if(player["picaxelv"] < 6){
-        alert("請勿跳級購買");
-    }
-    else{
-        alert("餘額不足");
-    };
-});
+function buypicaxe(lv, money, mamount){
+    document.getElementById(`picimg${lv}`).addEventListener("click", function(){
+        var count = 0;
+        for(var i = 1; i < mamount + 1; i++){
+            if(player[`money${i}`] >= money){
+                count += 1;
+            };
+        };
+        if(count == mamount && player["picaxelv"] == lv - 1){
+            player["picaxelv"] = lv;
+            for(var i = 1; i < mamount + 1; i++){
+                player[`money${i}`] -= money;
+            };
+            localStorage.setItem("account", JSON.stringify(player));
+            localStorage.setItem(player["id"], JSON.stringify(player));
+            alert("購買成功");
+            location.reload();
+        }
+        else if(player["picaxelv"] > lv - 1){
+            alert("已擁有此物品")
+        }
+        else if(player["picaxelv"] < lv - 1){
+            alert("請勿跳級購買");
+        }
+        else{
+            alert("餘額不足");
+        };
+    });
+    
+};
+buypicaxe(2, 1500, 1);
+buypicaxe(3, 3000, 2);
+buypicaxe(4, 4000, 3);
+buypicaxe(5, 6000, 4);
+buypicaxe(6, 10000, 5);
+buypicaxe(7, 16000, 5);
 for(var i = 1; i<6; i++){
     document.getElementById("container3").innerHTML +=`
     <div class="cavediv">
         <img src="../image/cave${i}.jpg" id="caveimg${i}" class="caveimg">
     </div>`
 };
+function addcaveorb(i, money, jamount){
+    for(var j = 1; j < jamount + 1; j++){
+        document.getElementById(`cavemon${i}`).innerHTML +=`
+            <div id="orblv${j}-${i}-2" class="orbdiv"></div>`;
+        document.getElementById(`orblv${j}-${i}-2`).innerHTML +=`
+            <img src="../image/orb${j}.png" class="orbimg"/>`;
+        document.getElementById(`orblv${j}-${i}-2`).innerHTML +=`<p class="orbamount">*${money}</p>`;
+    };
+}
 for(var i = 1; i<6; i++){
     document.getElementById("cavemondiv").innerHTML +=`
         <div id="cavemon${i}" class="cavemon"></div>`;
-    if(i == 1 || i== 2){
-        document.getElementById(`cavemon${i}`).innerHTML +=`
-            <div id="orblv1-${i}-2" class="orbdiv"></div>`;
-        document.getElementById(`orblv1-${i}-2`).innerHTML +=`
-            <img src="../image/orb1.png" class="orbimg"/>`;
-        if(i == 1){
-            document.getElementById(`orblv1-${i}-2`).innerHTML +=`<p class="orbamount">*0</p>`;
-        }
-        else{
-            document.getElementById(`orblv1-${i}-2`).innerHTML +=`<p class="orbamount">*5000</p>`;
-        }
+    if(i == 1){
+        addcaveorb(i, 0, 1);
+    }
+    else if(i == 2){
+        addcaveorb(i, 5000, 1);
     }
     else if(i == 3){
-        for(var j = 1; j<3; j++){
-            document.getElementById(`cavemon${i}`).innerHTML +=`
-                <div id="orblv${j}-${i}-2" class="orbdiv"></div>`;
-            document.getElementById(`orblv${j}-${i}-2`).innerHTML +=`
-                <img src="../image/orb${j}.png" class="orbimg"/>`;
-            if(j == 1){
-                    document.getElementById(`orblv${j}-${i}-2`).innerHTML +=`<p class="orbamount">*8000</p>`;
-            }
-            else if(j == 2){
-                document.getElementById(`orblv${j}-${i}-2`).innerHTML +=`<p class="orbamount">*8000</p>`;
-            };
-        };
+        addcaveorb(i, 8000, 2);
     }
     else if(i == 4){
-        for(var j = 1; j<4; j++){
-            document.getElementById(`cavemon${i}`).innerHTML +=`
-                <div id="orblv${j}-${i}-2" class="orbdiv"></div>`;
-            document.getElementById(`orblv${j}-${i}-2`).innerHTML +=`
-                <img src="../image/orb${j}.png" class="orbimg"/>`;
-            if(j == 1){
-                    document.getElementById(`orblv${j}-${i}-2`).innerHTML +=`<p class="orbamount">*10000</p>`;
-            }
-            else if(j == 2){
-                document.getElementById(`orblv${j}-${i}-2`).innerHTML +=`<p class="orbamount">*10000</p>`;
-            }
-            else if(j == 3){
-                document.getElementById(`orblv${j}-${i}-2`).innerHTML +=`<p class="orbamount">*10000</p>`;
-            }
-        };
+        addcaveorb(i, 10000, 3);
     }
     else if(i == 5){
-        for(var j = 1; j<5; j++){
-            document.getElementById(`cavemon${i}`).innerHTML +=`
-                <div id="orblv${j}-${i}-2" class="orbdiv"></div>`;
-            document.getElementById(`orblv${j}-${i}-2`).innerHTML +=`
-                <img src="../image/orb${j}.png" class="orbimg"/>`;
-            if(j == 1){
-                document.getElementById(`orblv${j}-${i}-2`).innerHTML +=`<p class="orbamount">*12000</p>`;
-            }
-            else if(j == 2){
-                document.getElementById(`orblv${j}-${i}-2`).innerHTML +=`<p class="orbamount">*12000</p>`;
-            }
-            else if(j == 3){
-                document.getElementById(`orblv${j}-${i}-2`).innerHTML +=`<p class="orbamount">*12000</p>`;
-            }
-            else if(j == 4){
-                document.getElementById(`orblv${j}-${i}-2`).innerHTML +=`<p class="orbamount">*12000</p>`;
-            };
-        };
+        addcaveorb(i, 12000, 4);
     };
 };
-document.getElementById("caveimg2").addEventListener("click", function(){
-    if(player["money1"] >= 5000 && player["cavelv"] == 1){
-        player["cavelv"] = 2;
-        player["money1"] -= 5000;
-        localStorage.setItem("account", JSON.stringify(player));
-        localStorage.setItem(player["id"], JSON.stringify(player));
-        alert("購買成功");
-        location.reload();
-    }
-    else if(player["cavelv"] > 1){
-        alert("已擁有此物品");
-    }
-    else{
-        alert("餘額不足");
-    };
-});
-document.getElementById("caveimg3").addEventListener("click", function(){
-    if(player["money1"] >= 8000 && player["money2"] >= 8000 && player["cavelv"] == 2){
-        player["cavelv"] = 3;
-        player["money1"] -= 8000;
-        player["money2"] -= 8000;
-        localStorage.setItem("account", JSON.stringify(player));
-        localStorage.setItem(player["id"], JSON.stringify(player));
-        alert("購買成功");
-        location.reload();
-    }
-    else if(player["cavelv"] > 2){
-        alert("已擁有此物品");
-    }
-    else if(player["cavelv"] < 2){
-        alert("請勿跳級購買");
-    }
-    else{
-        alert("餘額不足")
-    };
-});
-document.getElementById("caveimg4").addEventListener("click", function(){
-    if(player["money1"] >= 10000 && player["money2"] >= 10000 && player["money3"] >= 10000 && player["cavelv"] == 3){
-        player["cavelv"] = 4;
-        player["money1"] -= 10000;
-        player["money2"] -= 10000;
-        player["money3"] -= 10000;
-        localStorage.setItem("account", JSON.stringify(player));
-        localStorage.setItem(player["id"], JSON.stringify(player));
-        alert("購買成功");
-        location.reload();
-    }
-    else if(player["cavelv"] > 3){
-        alert("已擁有此物品");
-    }
-    else if(player["cavelv"] < 3){
-        alert("請勿跳級購買");
-    }
-    else{
-        alert("餘額不足")
-    };
-});
-document.getElementById("caveimg5").addEventListener("click", function(){
-    if(player["money1"] >= 12000 && player["money2"] >= 12000 && player["money3"] >= 12000 && player["money4"] >= 12000 && player["cavelv"] == 4){
-        player["cavelv"] = 5;
-        player["money1"] -= 12000;
-        player["money2"] -= 12000;
-        player["money3"] -= 12000;
-        player["money4"] -= 12000;
-        localStorage.setItem("account", JSON.stringify(player));
-        localStorage.setItem(player["id"], JSON.stringify(player));
-        alert("購買成功");
-        location.reload();
-    }
-    else if(player["cavelv"] > 4){
-        alert("已擁有此物品");
-    }
-    else if(player["cavelv"] < 4){
-        alert("請勿跳級購買");
-    }
-    else{
-        alert("餘額不足")
-    };
-});
+function buycave(lv, money){
+    document.getElementById(`caveimg${lv}`).addEventListener("click", function(){
+        var count = 0;
+        for(var i = 1; i < lv; i++){
+            if(player[`money${i}`] >= money){
+                count += 1;
+            };
+        };
+        if(count == lv - 1 && player["cavelv"] == lv - 1){
+            player["cavelv"] = lv;
+            for(var i = 1; i < lv; i++){
+                player[`money${i}`] -= money; 
+            }
+            localStorage.setItem("account", JSON.stringify(player));
+            localStorage.setItem(player["id"], JSON.stringify(player));
+            alert("購買成功");
+            location.reload();
+        }
+        else if(player["cavelv"] > lv - 1){
+            alert("已擁有此物品");
+        }
+        else if(player["cavelv"] < lv - 1){
+            alert("請勿跳級購買");
+        }
+        else{
+            alert("餘額不足")
+        };
+    });
+}
+buycave(2, 5000);
+buycave(3, 8000)
+buycave(4, 10000);
+buycave(5, 12000);
 var mine = document.getElementById("mine");
 mine.addEventListener("click", function(){
     location.assign("../mine/mine.html");

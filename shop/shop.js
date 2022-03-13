@@ -29,26 +29,30 @@ function addpicorb(i, money, jamount){
 for(var i = 1; i<8; i++){
     document.getElementById("picmondiv").innerHTML +=`
         <div id="picmon${i}" class="picmon"></div>`;
-    if(i == 1){
-        addpicorb(i, 0, 1);
-    }
-    else if(i == 2){
-        addpicorb(i, 1500, 1);
-    }
-    else if(i == 3){
-        addpicorb(i, 3000, 2);
-    }
-    else if(i == 4){
-        addpicorb(i, 4000, 3);
-    }
-    else if(i == 5){
-        addpicorb(i, 6000, 4);
-    }
-    else if(i == 6){
-        addpicorb(i, 10000, 5);
-    }
-    else if(i == 7){
-        addpicorb(i, 16000, 5);
+    switch(i){
+        case 1:
+            addpicorb(i, 0, 1);
+            break;
+        case 2:
+            addpicorb(i, 1500, 1);
+            break;
+        case 3:
+            addpicorb(i, 3000, 2);
+            break;
+        case 4:
+            addpicorb(i, 4000, 3);
+            break;
+        case 5:
+            addpicorb(i, 6000, 4);
+            break;
+        case 6:
+            addpicorb(i, 10000, 5);
+            break;
+        case 7:
+            addpicorb(i, 16000, 5);
+            break;
+        default:
+            break;
     };
 };
 function buypicaxe(lv, money, mamount){
@@ -105,20 +109,24 @@ function addcaveorb(i, money, jamount){
 for(var i = 1; i<6; i++){
     document.getElementById("cavemondiv").innerHTML +=`
         <div id="cavemon${i}" class="cavemon"></div>`;
-    if(i == 1){
-        addcaveorb(i, 0, 1);
-    }
-    else if(i == 2){
-        addcaveorb(i, 5000, 1);
-    }
-    else if(i == 3){
-        addcaveorb(i, 8000, 2);
-    }
-    else if(i == 4){
-        addcaveorb(i, 10000, 3);
-    }
-    else if(i == 5){
-        addcaveorb(i, 12000, 4);
+    switch(i){
+        case 1:
+            addcaveorb(i, 0, 1);
+            break;
+        case 2:
+            addcaveorb(i, 5000, 1);
+                break;
+        case 3:
+            addcaveorb(i, 8000, 2);
+            break;
+        case 4:
+            addcaveorb(i, 10000, 3);
+            break;
+        case 5:
+            addcaveorb(i, 12000, 4);
+            break;
+        default:
+            break;
     };
 };
 function buycave(lv, money){

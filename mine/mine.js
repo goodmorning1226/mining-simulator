@@ -5,48 +5,57 @@ if(localStorage.getItem("account") == null){
 var player = JSON.parse(localStorage.getItem("account"));
 var backgroundimg;
 var backgroundsize = "1600px";
-if(player["ncavelv"] == 1){
-    backgroundimg = "url('../image/cave1.jpg')";
-    document.getElementById("orb").src = "../image/orb1.png";
-}
-else if(player["ncavelv"] == 2){
-    backgroundimg = "url('../image/cave2.jpg')";
-    document.getElementById("orb").src = "../image/orb2.png";
-}
-else if(player["ncavelv"] == 3){
-    backgroundimg = "url('../image/cave3.jpg')";
-    document.getElementById("orb").src = "../image/orb3.png";
-}
-else if(player["ncavelv"] == 4){
-    backgroundimg = "url('../image/cave4.jpg')";
-    document.getElementById("orb").src = "../image/orb4.png";
-}
-else{
-    backgroundimg = "url('../image/cave5.jpg')";
-    backgroundsize = "1400px";
-    document.getElementById("orb").src = "../image/orb5.png"
+function bchange(ncavelv){
+    backgroundimg = `url('../image/cave${ncavelv}.jpg')`;
+    document.getElementById("orb").src = `../image/orb${ncavelv}.png`;    
 };
-if(player["npicaxelv"] == 1){
-    document.getElementById("picaxe").src = "../image/picaxe1.png";
-}
-else if(player["npicaxelv"] == 2){
-    document.getElementById("picaxe").src = "../image/picaxe2.png";
-}
-else if(player["npicaxelv"] == 3){
-    document.getElementById("picaxe").src = "../image/picaxe3.png";
-}
-else if(player["npicaxelv"] == 4){
-    document.getElementById("picaxe").src = "../image/picaxe4.png";
-}
-else if(player["npicaxelv"] == 5){
-    document.getElementById("picaxe").src = "../image/picaxe5.png";
-}
-else if(player["npicaxelv"] == 6){
-    document.getElementById("picaxe").src = "../image/picaxe6.png";
-}
-else{
-    document.getElementById("picaxe").src = "../image/picaxe7.png";
-}
+switch(player["ncavelv"]){
+    case 1:
+        bchange(1);
+        break;
+    case 2:
+        bchange(2);
+        break;
+    case 3:
+        bchange(3);
+        break;
+    case 4:
+        bchange(4);
+        break;
+    case 5:
+        bchange(5);
+        backgroundsize = "1400px";
+        break;
+    default:
+        break;
+};
+function pchange(npicaxelv){
+    document.getElementById("picaxe").src = `../image/picaxe${npicaxelv}.png`;    
+};
+switch(player["npicaxelv"]){
+    case 1:
+        pchange(1);
+        break;
+    case 2:
+        pchange(2);
+        break;
+    case 3:
+        pchange(3);
+        break;
+    case 4:
+        pchange(4);
+        break;
+    case 5:
+        pchange(5);
+        break;
+    case 6:
+        pchange(6);
+        break;
+    case 7:
+        pchange(7);
+    default:
+        break;
+};
 document.body.style.backgroundImage = backgroundimg;
 document.body.style.backgroundSize = backgroundsize;
 
@@ -103,54 +112,60 @@ var moneylv;
 var piclv;
 var orbpul;
 var getorblv;
+function olv(lv){
+    moneylv = `${lv}`;
+    getorblv = lv;
+};
+function plv(lv){
+    piclv = lv;
+    orbpul = lv;
+};
 orb.addEventListener("click", function(){
-    if(player["ncavelv"] == 1){
-        moneylv = "1";
-        getorblv = 1;
-    }
-    else if(player["ncavelv"] == 2){
-        moneylv = "2";
-        getorblv = 2;
-    }
-    else if(player["ncavelv"] == 3){
-        moneylv = "3";
-        getorblv = 3;
-    }
-    else if(player["ncavelv"] == 4){
-        moneylv = "4";
-        getorblv = 4;
-    }
-    else{
-        moneylv = "5";
-        getorblv = 5;
+    switch(player["ncavelv"]){
+        case 1:
+            olv(1);
+            break;
+        case 2:
+            olv(2);
+            break;
+        case 3:
+            olv(3);
+            break;
+        case 4:
+            olv(4);
+            break;
+        case 5:
+            olv(5);
+            break;
+        default:
+            break;
+            
     };
-    if(player["npicaxelv"] == 1){
-        piclv = 1;
-        orbpul = 1;
-    }
-    else if(player["npicaxelv"] == 2){
-        piclv = 3;
-        orbpul = 3;
-    }
-    else if(player["npicaxelv"] == 3){
-        piclv = 5;
-        orbpul = 5;
-    }
-    else if(player["npicaxelv"] == 4){
-        piclv = 7;
-        orbpul = 7;
-    }
-    else if(player["npicaxelv"] == 5){
-        piclv = 9;
-        orbpul = 9;
-    }
-    else if(player["npicaxelv"] == 6){
-        piclv = 11;
-        orbpul = 11;
-    }
-    else{
-        piclv = 16;
-        orbpul = 16;
+    switch(player["npicaxelv"]){
+        case 1:
+            plv(1);
+            break;
+        case 2:
+            plv(3);
+            break;
+        case 3:
+            plv(5);
+            break;
+        case 4:
+            plv(7);
+            break;
+        case 5:
+            plv(9);
+            break;
+        case 6:
+            plv(11);
+            break;
+        case 7:
+            plv(16);
+            break;
+        default:
+            break;
+            
     };
     money = player["money" + moneylv];
     money += piclv;
